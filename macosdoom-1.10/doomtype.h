@@ -38,6 +38,7 @@ typedef unsigned char byte;
 
 
 // Predefined with some OS.
+// Ported for MacOS
 #ifdef __APPLE__
 #include <limits.h>
 #elif LINUX

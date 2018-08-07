@@ -10,7 +10,7 @@ CFLAGS=-g -Wall -DNORMALUNIX -DLINUX # -DUSEASM
 LDFLAGS=-L/usr/X11R6/lib
 LIBS=-lXext -lX11 -lnsl -lm
 
-# subdirectory for objects
+# subdirectory for objects, changed to macos from linux
 O=macos
 
 # not too sophisticated dependency
