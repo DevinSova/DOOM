@@ -11,7 +11,7 @@ CFLAGS=-O -DNORMALUNIX -DLINUX
 LDFLAGS=
 LIBS=-lm
 
-O=linux
+O=macos
 
 all:	 $(O)/sndserver
 
