@@ -11,7 +11,7 @@ LDFLAGS=-L/usr/X11R6/lib
 LIBS=-lXext -lX11 -lnsl -lm
 
 # subdirectory for objects
-O=linux
+O=macos
 
 # not too sophisticated dependency
 OBJS=				\
