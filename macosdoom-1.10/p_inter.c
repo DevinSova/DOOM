@@ -50,9 +50,6 @@ rcsid[] = "$Id: p_inter.c,v 1.4 1997/02/03 22:45:11 b1 Exp $";
 
 #define BONUSADD	6
 
-#define MININT 0x00000000
-#define MAXINT 0x7FFFFFFF
-
 
 // a weapon is found with two clip loads,
 // a big item has five clip loads

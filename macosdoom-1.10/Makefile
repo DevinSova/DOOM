@@ -81,7 +81,7 @@ all:	 $(O)/macosdoom
 
 clean:
 	rm -f *.o *~ *.flc
-	rm -f linux/*
+	rm -f macos/*
 
 $(O)/macosdoom:	$(OBJS) $(O)/i_main.o
 	$(CC) $(CFLAGS) $(LDFLAGS) $(OBJS) $(O)/i_main.o \

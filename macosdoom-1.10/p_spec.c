@@ -52,8 +52,6 @@ rcsid[] = "$Id: p_spec.c,v 1.6 1997/02/03 22:45:12 b1 Exp $";
 // Data.
 #include "sounds.h"
 
-#define MININT 0x00000000
-#define MAXINT 0x7FFFFFFF
 
 //
 // Animating textures and planes

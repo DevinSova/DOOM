@@ -35,9 +35,6 @@ rcsid[] = "$Id: m_bbox.c,v 1.1 1997/02/03 22:45:10 b1 Exp $";
 #endif
 #include "m_fixed.h"
 
-#define MININT 0x00000000
-#define MAXINT 0x7FFFFFFF
-
 // Fixme. __USE_C_FIXED__ or something.
 
 fixed_t
