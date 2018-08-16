@@ -29,23 +29,12 @@ rcsid[] = "$Id: i_x.c,v 1.6 1997/02/03 22:45:10 b1 Exp $";
 #include <sys/ipc.h>
 #include <sys/shm.h>
 
-/*
-#ifdef __APPLE__
-#include </opt/X11/include/X11/Xlib.h>
-#include </opt/X11/include/X11/Xutil.h>
-#include </opt/X11/include/X11/keysym.h>
-#include </opt/X11/include/X11/extensions/XShm.h>
-
-#elif LINUX
-*/
 #include <X11/Xlib.h>
 #include <X11/Xutil.h>
 #include <X11/keysym.h>
 #include <X11/extensions/XShm.h>
 // Had to dig up XShm.c for this one.
 // It is in the libXext, but not in the XFree86 headers.
-
-//#endif
 
 #ifdef LINUX
 int XShmGetEventBase( Display* dpy ); // problems with g++?
@@ -779,7 +768,7 @@ void I_InitGraphics(void)
 
     // use the default visual 
     X_screen = DefaultScreen(X_display);
-    if (!XMatchVisualInfo(X_display, X_screen, 8, PseudoColor, &X_visualinfo))
+    if (!XMatchVisualInfo(X_display, X_screen, 4, PseudoColor, &X_visualinfo))
 	I_Error("xdoom currently only supports 256-color PseudoColor screens");
     X_visual = X_visualinfo.visual;
 
