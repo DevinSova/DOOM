@@ -39,7 +39,7 @@ static const char rcsid[] = "$Id: d_net.c,v 1.3 1997/02/03 22:01:47 b1 Exp $";
 #define	NCMD_SETUP		0x20000000
 #define	NCMD_KILL		0x10000000	// kill game
 #define	NCMD_CHECKSUM	 	0x0fffffff
-
+#define MAXINT 0x7fffffff
  
 doomcom_t*	doomcom;	
 doomdata_t*	netbuffer;		// points inside doomcom

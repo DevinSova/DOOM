@@ -45,6 +45,8 @@ rcsid[] = "$Id: r_things.c,v 1.5 1997/02/03 16:47:56 b1 Exp $";
 
 #define MINZ				(FRACUNIT*4)
 #define BASEYCENTER			100
+#define MININT 0x00000000
+#define MAXINT 0x7FFFFFFF
 
 //void R_DrawColumn (void);
 //void R_DrawFuzzColumn (void);

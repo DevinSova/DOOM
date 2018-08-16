@@ -39,7 +39,8 @@ rcsid[] = "$Id: p_maputl.c,v 1.5 1997/02/03 22:45:11 b1 Exp $";
 
 // State.
 #include "r_state.h"
-
+#define MININT 0x00000000
+#define MAXINT 0x7FFFFFFF
 //
 // P_AproxDistance
 // Gives an estimation of distance (not exact)

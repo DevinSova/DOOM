@@ -47,6 +47,8 @@ static const char rcsid[] = "$Id: am_map.c,v 1.4 1997/02/03 21:24:33 b1 Exp $";
 
 #include "am_map.h"
 
+#define MININT 0x00000000
+#define MAXINT 0x7FFFFFFF
 
 // For use if I do walls with outsides/insides
 #define REDS		(256-5*16)

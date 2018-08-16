@@ -253,16 +253,16 @@ default_t	defaults[] =
     {"key_speed",&key_speed, KEY_RSHIFT},
 
 // UNIX hack, to be removed. 
-#ifdef SNDSERV
-    {"sndserver", (int *) &sndserver_filename, (int) "sndserver"},
-    {"mb_used", &mb_used, 2},
+#ifdef SNDSERV	
+	//{"sndserver", (int *) &sndserver_filename, (int) "sndserver"},
+    //{"mb_used", &mb_used, 2},
 #endif
     
 #endif
 
 #ifdef LINUX
-    {"mousedev", (int*)&mousedev, (int)"/dev/ttyS0"},
-    {"mousetype", (int*)&mousetype, (int)"microsoft"},
+    //{"mousedev", (int*)&mousedev, (int)"/dev/ttyS0"},
+    //{"mousetype", (int*)&mousetype, (int)"microsoft"},
 #endif
 
     {"use_mouse",&usemouse, 1},
@@ -284,7 +284,7 @@ default_t	defaults[] =
 
 
     {"usegamma",&usegamma, 0},
-
+	/*
     {"chatmacro0", (int *) &chat_macros[0], (int) HUSTR_CHATMACRO0 },
     {"chatmacro1", (int *) &chat_macros[1], (int) HUSTR_CHATMACRO1 },
     {"chatmacro2", (int *) &chat_macros[2], (int) HUSTR_CHATMACRO2 },
@@ -295,7 +295,7 @@ default_t	defaults[] =
     {"chatmacro7", (int *) &chat_macros[7], (int) HUSTR_CHATMACRO7 },
     {"chatmacro8", (int *) &chat_macros[8], (int) HUSTR_CHATMACRO8 },
     {"chatmacro9", (int *) &chat_macros[9], (int) HUSTR_CHATMACRO9 }
-
+	*/
 };
 
 int	numdefaults;
